@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1572038758 source:/media/mohamed/E/codeblocks/Multithreaded-algorithms/Matrix_Multiplication/main.cpp
+	<iostream>
+	"matrix.h"
+	"matrix_threading_algorithm.h"
+	<pthread.h>
+
+1572038227 /media/mohamed/E/codeblocks/Multithreaded-algorithms/Matrix_Multiplication/matrix.h
+	<iostream>
+
+1572038263 source:/media/mohamed/E/codeblocks/Multithreaded-algorithms/Matrix_Multiplication/matrix.cpp
+	"matrix.h"
+	<iostream>
+
+1572038816 /media/mohamed/E/codeblocks/Multithreaded-algorithms/Matrix_Multiplication/matrix_threading_algorithm.h
+
+1572039017 source:/media/mohamed/E/codeblocks/Multithreaded-algorithms/Matrix_Multiplication/matrix_threading_algorithm.cpp
+	<iostream>
+	<pthread.h>
+	"matrix.h"
+	"matrix_threading_algorithm.h"
+
