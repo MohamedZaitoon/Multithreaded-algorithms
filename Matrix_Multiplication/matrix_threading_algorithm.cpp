@@ -1,8 +1,6 @@
 #include <iostream>
-
 #include <pthread.h>
 #include "matrix.h"
-
 #include "matrix_threading_algorithm.h"
 
 using namespace std;
@@ -86,7 +84,7 @@ void* multiply_matrix_based_row(void * args) {
     }
 
     for(size_t i = 0; i < c->rows; i++) {
-        if(pthread_join(thrds[i], NULL) != 0)cout<<"error on thread["<<i<<"]"<<endl;
+        pthread_join(thrds[i], NULL);
     }
 
     return NULL;
