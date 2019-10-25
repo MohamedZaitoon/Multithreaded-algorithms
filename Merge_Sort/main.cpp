@@ -51,15 +51,16 @@ void* merge_sort(void * args){
         int mid = (right + left)/ 2;
         merge_input left_side = {arr, left, mid};
         merge_input right_side = {arr, mid+1, right};
-        pthread_t th1,th2 ;
+        pthread_t th1;//,th2 ;
 
         pthread_create(&th1, NULL, merge_sort, &left_side);
-        //pthread_create(&th2, NULL, merge_sort, &right_side); //using two thread lead to overhead on system so it take more time
+        // pthread_create(&th2, NULL, merge_sort, &right_side); //using two thread leads to overhead on the system, so it take more time
+        merge_sort(&right_side);
+        
+
 
         pthread_join(th1, NULL);
-        //pthread_join(th2, NULL);
-
-
+        // pthread_join(th2, NULL);
         merge(arr, left, mid, right);
 
     }
