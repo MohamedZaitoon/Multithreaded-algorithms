@@ -1,0 +1,2 @@
+g++ main.cpp matrix.cpp matrix_threading_algorithm.cpp  -lpthread   -o mm
+time ./mm

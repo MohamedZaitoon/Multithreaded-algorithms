@@ -19,8 +19,8 @@ matrix* matrix_multiplication(matrix*a, matrix*b) {
 
     matrix_multiplication_args mma(c,a,b,0,0);
 
-    //multiply_matrix_based_row(&mma);
-    multiply_matrix_based_element(&mma);
+    multiply_matrix_based_row(&mma);
+    // multiply_matrix_based_element(&mma);
 
 
     return c;
